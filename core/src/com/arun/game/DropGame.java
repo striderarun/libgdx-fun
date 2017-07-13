@@ -33,10 +33,12 @@ public class DropGame extends ApplicationAdapter {
     private Array<Rectangle> raindrops;
     private long lastDropTime;
 
-
+    /**
+     *  For Android
+     */
     @Override
     public void create() {
-    //For Android
+
 //        drop = new Texture("data/drop.png");
 //        bucket = new Texture("data/bucket.png");
 
