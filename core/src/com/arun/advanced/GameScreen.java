@@ -36,12 +36,12 @@ public class GameScreen implements Screen {
         this.game = game;
 
         // load the images for the droplet and the bucket, 64x64 pixels each
-        dropImage = new Texture(Gdx.files.internal("/Users/arun_subramonian/Documents/Fun/GameTwo/android/assets/data/drop.png"));
-        bucketImage = new Texture(Gdx.files.internal("/Users/arun_subramonian/Documents/Fun/GameTwo/android/assets/data/bucket.png"));
+        dropImage = new Texture(Gdx.files.internal("data/drop.png"));
+        bucketImage = new Texture(Gdx.files.internal("data/bucket.png"));
 
         // load the drop sound effect and the rain background "music"
-        dropSound = Gdx.audio.newSound(Gdx.files.internal("/Users/arun_subramonian/Documents/Fun/GameTwo/android/assets/data/explode.wav"));
-        rainMusic = Gdx.audio.newMusic(Gdx.files.internal("/Users/arun_subramonian/Documents/Fun/GameTwo/android/assets/data/music.mp3"));
+        dropSound = Gdx.audio.newSound(Gdx.files.internal("data/explode.wav"));
+        rainMusic = Gdx.audio.newMusic(Gdx.files.internal("data/music.mp3"));
 
         rainMusic.setLooping(true);
 

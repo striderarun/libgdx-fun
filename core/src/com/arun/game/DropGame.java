@@ -35,6 +35,12 @@ public class DropGame extends ApplicationAdapter {
      */
     @Override
     public void create() {
+        drop = new Texture(Gdx.files.internal("data/drop.png"));
+        bucket = new Texture(Gdx.files.internal("data/bucket.png"));
+
+        dropSound = Gdx.audio.newSound(Gdx.files.internal("data/explode.wav"));
+        dropMusic = Gdx.audio.newMusic(Gdx.files.internal("data/music.mp3"));
+
         sprite = new SpriteBatch();
         camera = new OrthographicCamera();
         camera.setToOrtho(false, 800, 480);
