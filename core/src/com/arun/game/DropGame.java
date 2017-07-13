@@ -18,9 +18,6 @@ import com.badlogic.gdx.utils.TimeUtils;
 
 import java.util.Iterator;
 
-/**
- * Created by arun_subramonian on 8/16/15.
- */
 public class DropGame extends ApplicationAdapter {
 
     private SpriteBatch sprite;
@@ -38,19 +35,6 @@ public class DropGame extends ApplicationAdapter {
      */
     @Override
     public void create() {
-
-//        drop = new Texture("data/drop.png");
-//        bucket = new Texture("data/bucket.png");
-
-//        dropSound = Gdx.audio.newSound(Gdx.files.internal("data/explode.wav"));
-//        dropMusic = Gdx.audio.newMusic(Gdx.files.internal("data/music.mp3"));
-
-        drop = new Texture(Gdx.files.internal("/Users/arun_subramonian/Documents/Fun/GameTwo/android/assets/data/drop.png"));
-        bucket = new Texture(Gdx.files.internal("/Users/arun_subramonian/Documents/Fun/GameTwo/android/assets/data/bucket.png"));
-
-        dropSound = Gdx.audio.newSound(Gdx.files.internal("/Users/arun_subramonian/Documents/Fun/GameTwo/android/assets/data/explode.wav"));
-        dropMusic = Gdx.audio.newMusic(Gdx.files.internal("/Users/arun_subramonian/Documents/Fun/GameTwo/android/assets/data/music.mp3"));
-
         sprite = new SpriteBatch();
         camera = new OrthographicCamera();
         camera.setToOrtho(false, 800, 480);

@@ -5,9 +5,7 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 
-/**
- * Created by arun_subramonian on 8/16/15.
- */
+
 public class MainMenuScreen implements Screen {
 
     final Drop game;
