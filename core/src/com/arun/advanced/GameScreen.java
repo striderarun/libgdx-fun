@@ -96,7 +96,7 @@ public class GameScreen implements Screen {
         game.getBitmapFont().draw(game.getSpriteBatch(), "Drops Collected: " + dropsGathered, 0, 480);
         game.getBitmapFont().draw(game.getSpriteBatch(), "Drops Lost: " + dropsLost, 200, 480);
         game.getBitmapFont().draw(game.getSpriteBatch(), "Game Level: " + gameLevel, 400, 480);
-        game.getSpriteBatch().draw(bucketImage, bucket.x, bucket.y);
+        game.getSpriteBatch().draw(bucketImage, bucket.x, bucket.y + ((gameLevel - 1)*20));
         for (Rectangle raindrop : raindrops) {
             game.getSpriteBatch().draw(dropImage, raindrop.x, raindrop.y);
         }
