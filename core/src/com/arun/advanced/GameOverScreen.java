@@ -5,9 +5,6 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 
-/**
- * Created by arun_subramonian on 8/16/15.
- */
 public class GameOverScreen implements Screen {
 
     final Drop game;
@@ -34,7 +31,8 @@ public class GameOverScreen implements Screen {
 
         game.getSpriteBatch().begin();
         game.getBitmapFont().draw(game.getSpriteBatch(), "Game Over!!! ", 100, 150);
-        game.getBitmapFont().draw(game.getSpriteBatch(), "Tap anywhere to start a new gane!", 100, 100);
+        game.getBitmapFont().draw(game.getSpriteBatch(), "Tap anywhere to start a new game!", 100, 100);
+        game.getBitmapFont().draw(game.getSpriteBatch(), "Game by Arun!", 600, 100);
         game.getSpriteBatch().end();
 
         if (Gdx.input.isTouched()) {
