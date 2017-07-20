@@ -141,13 +141,17 @@ public class GameScreen implements Screen {
             }
             if (raindrop.overlaps(bucket)) {
                 dropsGathered++;
-                if(dropsGathered >20) {
-                    gameLevel = 2;
-                } else if (dropsGathered >30) {
-                    gameLevel = 3;
-                }
                 dropSound.play();
                 iter.remove();
+            }
+            if(dropsGathered >20) {
+                gameLevel = 2;
+            }
+            if (dropsGathered >50) {
+                gameLevel = 3;
+            }
+            if (dropsGathered >70) {
+                gameLevel = 4;
             }
         }
     }
